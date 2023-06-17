@@ -1,0 +1,33 @@
+<html lang="ja">
+  <head>
+    <title>THIS IS TEST</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <p id="message"></p>
+    <div id="remote-videos">
+      <div id="smile-score-remote"></div>
+      <div class="score-background"></div>
+    </div>
+    <main>
+      <div id="cameraArea">
+        <video id="camera" width="640" height="480" playsinline muted autoplay></video>
+        <canvas id="canvas"></canvas>
+        <div id="smile-score"></div>
+        <div class="score-background"></div>
+        <div id="emoticonBar"><span id="emoticon">:|</span></div>
+      </div>
+      <form id="form-name">
+        <input type="text" id="my-name" />
+        <button>submit</button>
+      </form>
+    </main>
+    <script type="text/javascript" src="js/sora.js"></script>
+    <script type="text/javascript" src="js/sendrecv.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="js/socket.js"></script>
+    <script type="text/javascript" src="js/face-api.min.js"></script>
+    <script type="text/javascript" src="js/face-expression.js"></script>
+  </body>
+</html>
