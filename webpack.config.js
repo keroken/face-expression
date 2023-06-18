@@ -1,4 +1,4 @@
-// const Dotenv = require('dotenv-webpack');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: './src/main.js',
@@ -15,12 +15,11 @@ module.exports = {
       stream: require.resolve("stream-browserify"),
       buffer: require.resolve("buffer/"),
       path: require.resolve("path-browserify"),
-      process: require.resolve('process/browser'),
       fs: false,
       worker_threads: false,
     }
   },
-  // plugins: [
-  //   new Dotenv(),
-  // ],
+  plugins: [
+    new Dotenv(),
+  ],
 }
