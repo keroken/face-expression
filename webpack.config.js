@@ -15,6 +15,7 @@ module.exports = {
       stream: require.resolve("stream-browserify"),
       buffer: require.resolve("buffer/"),
       path: require.resolve("path-browserify"),
+      process: require.resolve('process/browser'),
       fs: false,
       worker_threads: false,
     }
