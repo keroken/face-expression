@@ -1,4 +1,4 @@
-const Dotenv = require('dotenv-webpack');
+// const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: './src/main.js',
@@ -19,7 +19,7 @@ module.exports = {
       worker_threads: false,
     }
   },
-  plugins: [
-    new Dotenv(),
-  ],
+  // plugins: [
+  //   new Dotenv(),
+  // ],
 }
