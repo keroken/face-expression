@@ -10,7 +10,6 @@
     "express": "^4.18.2",
     "face-api.js": "^0.22.2",
     "http": "^0.0.1-security",
-    "npm-run-all": "^4.1.5",
     "os": "^0.1.2",
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.1",
@@ -25,8 +24,6 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-dev": "npm-run-all dev start",
-    "start-prod": "npm-run-all build start",
     "start": "node server.js",
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
