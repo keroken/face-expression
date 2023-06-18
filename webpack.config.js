@@ -1,7 +1,6 @@
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
-  mode: 'production',
   entry: './src/main.js',
   output: {
     path: `${__dirname}/public`,
